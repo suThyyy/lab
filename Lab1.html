@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Landing Page</title>
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
             <span>Govita Solution</span>
         </div>
-        <nav class="nav">
+        <button class="hamburger" id="hamburger-btn" type="button" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="main-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav" id="main-nav">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
             <div class="nav-item">
@@ -41,162 +49,135 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section class="hero-section" id="home">
-        <div class="hero-slider">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
-                alt="Office Workspace" class="hero-image active">
-            <button class="slider-btn prev-btn" type="button" aria-label="Previous slide">&lt;</button>
-            <button class="slider-btn next-btn" type="button" aria-label="Next slide">&gt;</button>
-        </div>
-        <div class="hero-content">
-            <h1>Modern solution for your bussiness</h1>
-            <p>We build digital products that help your bussiness grows faster, smarter and stronger</p>
-            <button class="btn-primary">Get started &rarr;</button>
-        </div>
-    </section>
-    <section class="services-section" id="services">
-        <div class="container">
-            <div class="section-title">
-                <span class="sub-heading">OUR SERVICES</span>
-                <h2>Welcome to Govita Solution</h2>
-                <p>We provide high-quality software solutions to help your business achieve its goals and reach new heights.
-                </p>
+    <main>
+        <section class="hero-section" id="home">
+            <div class="hero-slider">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+                    alt="Office Workspace" class="hero-image active">
+                <button class="slider-btn prev-btn" type="button" aria-label="Previous slide">&lt;</button>
+                <button class="slider-btn next-btn" type="button" aria-label="Next slide">&gt;</button>
             </div>
-    
-            <div class="card-grid">
-                <div class="card">
-                    <h3 class="card-header">Web Development</h3>
-                    <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus reiciendis eaque
-                        accusantium!</p>
-                    <a href="#" class="card-link">Learn More &rarr;</a>
-                </div>
-    
-                <div class="card">
-                    <h3 class="card-header">Mobile Apps</h3>
-                    <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus reiciendis eaque
-                        accusantium!</p>
-                    <a href="#" class="card-link">Learn More &rarr;</a>
-                </div>
-    
-                <div class="card">
-                    <h3 class="card-header">Cloud Solutions</h3>
-                    <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus reiciendis eaque
-                        accusantium!</p>
-                    <a href="#" class="card-link">Learn More &rarr;</a>
-                </div>
-    
-                <div class="card">
-                    <h3 class="card-header">IT Consulting</h3>
-                    <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus reiciendis eaque
-                        accusantium!</p>
-                    <a href="#" class="card-link">Learn More &rarr;</a>
-                </div>
+            <div class="hero-content">
+                <h1>Modern solution for your bussiness</h1>
+                <p>We build digital products that help your bussiness grows faster, smarter and stronger</p>
+                <button class="btn-primary">Get started &rarr;</button>
             </div>
-        </div>
-    </section>
-    <section class="portfolio-section" id="portfolio">
-        <div class="container">
-            <div class="section-title">
-                <span class="sub-heading">OUR PORTFOLIO</span>
-                <h2>Portfolio Heading</h2>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-card">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
-                        alt="Project One" class="portfolio-img">
-                    <div class="portfolio-body">
-                        <h3>Project One</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque labore ex aut reprehenderit quaerat
-                            doloremque.</p>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
-                        alt="Project One" class="portfolio-img">
-                    <div class="portfolio-body">
-                        <h3>Project One</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque labore ex aut reprehenderit quaerat
-                            doloremque.</p>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
-                        alt="Project One" class="portfolio-img">
-                    <div class="portfolio-body">
-                        <h3>Project One</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque labore ex aut reprehenderit quaerat
-                            doloremque.</p>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
-                        alt="Project One" class="portfolio-img">
-                    <div class="portfolio-body">
-                        <h3>Project One</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque labore ex aut reprehenderit quaerat
-                            doloremque.</p>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
-                        alt="Project One" class="portfolio-img">
-                    <div class="portfolio-body">
-                        <h3>Project One</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque labore ex aut reprehenderit quaerat
-                            doloremque.</p>
-                    </div>
-                </div>
-                <div class="portfolio-card">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
-                        alt="Project One" class="portfolio-img">
-                    <div class="portfolio-body">
-                        <h3>Project One</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque labore ex aut reprehenderit quaerat
-                            doloremque.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<section class="about-section" id="about">
-    <div class="container">
-        <div class="about-layout">
-
-            <div class="about-content">
+        </section>
+        <section class="services-section" id="services">
+            <div class="container">
                 <div class="section-title">
-                    <span class="sub-heading">WHY CHOOSE US</span>
-                    <h2>Modern Business Features</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, eum eaque hic maxime
-                        architecto repudiandae doloremque mollitia laboriosam cumque deserunt fuga at.</p>
+                    <span class="sub-heading">OUR SERVICES</span>
+                    <h2>Welcome to Govita Solution</h2>
+                    <p>We provide high-quality software solutions to help your business achieve its goals and reach new
+                        heights.</p>
                 </div>
 
-                <ul class="about-feature-list">
-                    <li> Responsive and modern design</li>
-                    <li> Easy to customize</li>
-                    <li> Fast Performance</li>
-                    <li> 24/7 Support</li>
-                </ul>
-
-                <p class="about-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore
-                    laudantium temporibus, facere voluptatibus officiis corrupti excepturi sit harum dolores.</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3 class="card-header">Web Development</h3>
+                        <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus reiciendis
+                            eaque accusantium!</p>
+                        <a href="#" class="card-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-header">Mobile Apps</h3>
+                        <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus reiciendis
+                            eaque accusantium!</p>
+                        <a href="#" class="card-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-header">Cloud Solutions</h3>
+                        <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus reiciendis
+                            eaque accusantium!</p>
+                        <a href="#" class="card-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-header">IT Consulting</h3>
+                        <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus reiciendis
+                            eaque accusantium!</p>
+                        <a href="#" class="card-link">Learn More &rarr;</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="about-visual">
-                <div class="about-img-box">
-                    <img src="https://i.ytimg.com/vi/xc_h-qQ86Qg/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AG-B4AC0AWKAgwIABABGE4gVihlMA8=&rs=AOn4CLD9-UPleXrJJphYcSkf9MavPbQIjw"
-                        alt="Workspace">
+        </section>
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-title">
+                    <span class="sub-heading">OUR PORTFOLIO</span>
+                    <h2>Portfolio Heading</h2>
                 </div>
-                <div class="about-btn-group">
-                    <button class="btn-primary">Get Started Now &rarr;</button>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
+                            alt="Project One" class="portfolio-img">
+                        <div class="portfolio-body">
+                            <h3>Project One</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque labore ex aut
+                                reprehenderit quaerat doloremque.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
+                            alt="Project Two" class="portfolio-img">
+                        <div class="portfolio-body">
+                            <h3>Project Two</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque labore ex aut
+                                reprehenderit quaerat doloremque.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
+                            alt="Project Three" class="portfolio-img">
+                        <div class="portfolio-body">
+                            <h3>Project Three</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque labore ex aut
+                                reprehenderit quaerat doloremque.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-layout">
+                    <div class="about-content">
+                        <div class="section-title">
+                            <span class="sub-heading">WHY CHOOSE US</span>
+                            <h2>Modern Business Features</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, eum eaque hic maxime
+                                architecto repudiandae doloremque mollitia laboriosam cumque deserunt fuga at.</p>
+                        </div>
 
-        </div>
-    </div>
-</section>
-   
+                        <ul class="about-feature-list">
+                            <li>Responsive and modern design</li>
+                            <li>Easy to customize</li>
+                            <li>Fast Performance</li>
+                            <li>24/7 Support</li>
+                        </ul>
+
+                        <p class="about-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore
+                            laudantium temporibus, facere voluptatibus officiis corrupti excepturi sit harum dolores.
+                        </p>
+                    </div>
+
+                    <div class="about-visual">
+                        <div class="about-img-box">
+                            <img src="https://i.ytimg.com/vi/xc_h-qQ86Qg/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AG-B4AC0AWKAgwIABABGE4gVihlMA8=&rs=AOn4CLD9-UPleXrJJphYcSkf9MavPbQIjw"
+                                alt="Workspace">
+                        </div>
+                        <div class="about-btn-group">
+                            <button class="btn-primary">Get Started Now &rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer" id="contact">
-    <p>Copyright &copy; Govita 2026</p>
+        <p>Copyright &copy; Govita 2026</p>
     </footer>
+
+ 
 </body>
+
 </html>
