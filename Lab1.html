@@ -1,183 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    <header class="header">
-        <div class="logo">
-            <span>Govita Solution</span>
-        </div>
-        <button class="hamburger" id="hamburger-btn" type="button" aria-label="Open navigation menu"
-            aria-expanded="false" aria-controls="main-nav">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav class="nav" id="main-nav">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <div class="nav-item">
-                <a href="#portfolio">Portfolio &#9662;</a>
-                <div class="dropdown">
-                    <a href="#portfolio">Project One</a>
-                    <div class="nav-item nested-item">
-                        <a href="#portfolio">Project Two &#9656;</a>
-                        <div class="dropdown nested-dropdown">
-                            <a href="#portfolio">Frontend</a>
-                            <a href="#portfolio">Backend</a>
-                            <a href="#portfolio">Full Stack</a>
-                        </div>
-                    </div>
-                    <a href="#portfolio">Project Three</a>
-                </div>
-            </div>
-            <a href="#about">About</a>
-            <div class="nav-item">
-                <a href="#contact">Other Pages &#9662;</a>
-                <div class="dropdown">
-                    <a href="#contact">Pricing</a>
-                    <a href="#contact">Resources</a>
-                    <a href="#contact">Team</a>
-                </div>
-            </div>
-            <a href="#contact">Contact</a>
-        </nav>
+  <body>
+    <header>
+      <div class="logo">Govita Solution</div>
+      <button
+        class="hamburger"
+        id="navToggle"
+        type="button"
+        aria-label="Toggle navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <ul class="nav-menu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="has-dropdown">
+            <a href="#portfolio">Portfolio &#9662;</a>
+            <ul class="dropdown">
+              <li><a href="#portfolio">Project 1</a></li>
+              <li class="has-dropdown">
+                <a href="#portfolio">Project 2 &#9656;</a>
+                <ul class="dropdown">
+                  <li><a href="#portfolio">FE</a></li>
+                  <li><a href="#portfolio">BE</a></li>
+                  <li><a href="#portfolio">FS</a></li>
+                </ul>
+              </li>
+              <li><a href="#portfolio">Project 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#about">Blogs</a></li>
+          <li><a href="#about">Other Pages</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-        <section class="hero-section" id="home">
-            <div class="hero-slider">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
-                    alt="Office Workspace" class="hero-image active">
-                <button class="slider-btn prev-btn" type="button" aria-label="Previous slide">&lt;</button>
-                <button class="slider-btn next-btn" type="button" aria-label="Next slide">&gt;</button>
+      <section id="hero" class="hero-section">
+        <div class="slider">
+          <div class="slider-container">
+            <img src="images/img1.png" alt="Slide 1" class="slide active" />
+            <img src="images/img2.png" alt="Slide 2" class="slide" />
+            <img src="images/img3.png" alt="Slide 3" class="slide" />
+          </div>
+          <div class="indicators">
+            <button
+              class="indicator active"
+              data-slide-to="0"
+              aria-label="Go to slide 1"
+            ></button>
+            <button
+              class="indicator"
+              data-slide-to="1"
+              aria-label="Go to slide 2"
+            ></button>
+            <button
+              class="indicator"
+              data-slide-to="2"
+              aria-label="Go to slide 3"
+            ></button>
+          </div>
+          <button class="slider-btn prev" id="prevBtn">&#10094;</button>
+          <button class="slider-btn next" id="nextBtn">&#10095;</button>
+        </div>
+        <div class="hero-content">
+          <h1>Modern solution for your bussiness</h1>
+          <p>
+            We build digital products that help your bussiness grows faster,
+            smarter and stronger
+          </p>
+          <button class="btn-primary">Get started &rarr;</button>
+        </div>
+      </section>
+      <section id="services" class="services-section">
+        <div class="container">
+          <div class="section-title">
+            <span class="sub-heading">OUR SERVICES</span>
+            <h2>Welcome to Govita Solution</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere?
+            </p>
+          </div>
+          <div class="card-grid">
+            <div class="card">
+              <h3>Web Development</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus
+                reiciendis eaque accusantium!
+              </p>
+              <a href="#" class="card-link">Learn More &rarr;</a>
             </div>
-            <div class="hero-content">
-                <h1>Modern solution for your bussiness</h1>
-                <p>We build digital products that help your bussiness grows faster, smarter and stronger</p>
-                <button class="btn-primary">Get started &rarr;</button>
+            <div class="card">
+              <h3>Mobile Apps</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus
+                reiciendis eaque accusantium!
+              </p>
+              <a href="#" class="card-link">Learn More &rarr;</a>
             </div>
-        </section>
-        <section class="services-section" id="services">
-            <div class="container">
-                <div class="section-title">
-                    <span class="sub-heading">OUR SERVICES</span>
-                    <h2>Welcome to Govita Solution</h2>
-                    <p>We provide high-quality software solutions to help your business achieve its goals and reach new
-                        heights.</p>
-                </div>
+            <div class="card">
+              <h3>Cloud Solutions</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus
+                reiciendis eaque accusantium!
+              </p>
+              <a href="#" class="card-link">Learn More &rarr;</a>
+            </div>
+            <div class="card">
+              <h3>IT Consulting</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus
+                reiciendis eaque accusantium!
+              </p>
+              <a href="#" class="card-link">Learn More &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio-section">
+        <div class="container">
+          <div class="section-title">
+            <span class="sub-heading">OUR PORTFOLIO</span>
+            <h2>Portfolio Heading</h2>
+          </div>
+          <div class="portfolio-grid">
+            <div class="portfolio-card">
+              <img src="images/img4.png" alt="anh nay la suthy xinh gai" />
+              <div class="portfolio-body">
+                <h3>Project one</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium consectetur rerum deserunt qui iusto, quasi natus
+                  reprehenderit dolores sapiente dolorem. Inventore vitae vero
+                  id quam laudantium officiis ut perferendis amet?
+                </p>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <img src="images/img6.png" alt="anh nay la suthy xinh gai" />
+              <div class="portfolio-body">
+                <h3>Project two</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium consectetur rerum deserunt qui iusto, quasi natus
+                  reprehenderit dolores sapiente dolorem. Inventore vitae vero
+                  id quam laudantium officiis ut perferendis amet?
+                </p>
+              </div>
+            </div>
 
-                <div class="card-grid">
-                    <div class="card">
-                        <h3 class="card-header">Web Development</h3>
-                        <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus reiciendis
-                            eaque accusantium!</p>
-                        <a href="#" class="card-link">Learn More &rarr;</a>
-                    </div>
-                    <div class="card">
-                        <h3 class="card-header">Mobile Apps</h3>
-                        <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus reiciendis
-                            eaque accusantium!</p>
-                        <a href="#" class="card-link">Learn More &rarr;</a>
-                    </div>
-                    <div class="card">
-                        <h3 class="card-header">Cloud Solutions</h3>
-                        <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus reiciendis
-                            eaque accusantium!</p>
-                        <a href="#" class="card-link">Learn More &rarr;</a>
-                    </div>
-                    <div class="card">
-                        <h3 class="card-header">IT Consulting</h3>
-                        <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Natus reiciendis
-                            eaque accusantium!</p>
-                        <a href="#" class="card-link">Learn More &rarr;</a>
-                    </div>
-                </div>
+            <div class="portfolio-card">
+              <img src="images/img7.png" alt="anh nay la suthy xinh gai" />
+              <div class="portfolio-body">
+                <h3>Project three</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium consectetur rerum deserunt qui iusto, quasi natus
+                  reprehenderit dolores sapiente dolorem. Inventore vitae vero
+                  id quam laudantium officiis ut perferendis amet?
+                </p>
+              </div>
             </div>
-        </section>
-        <section class="portfolio-section" id="portfolio">
-            <div class="container">
-                <div class="section-title">
-                    <span class="sub-heading">OUR PORTFOLIO</span>
-                    <h2>Portfolio Heading</h2>
-                </div>
-                <div class="portfolio-grid">
-                    <div class="portfolio-card">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
-                            alt="Project One" class="portfolio-img">
-                        <div class="portfolio-body">
-                            <h3>Project One</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque labore ex aut
-                                reprehenderit quaerat doloremque.</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
-                            alt="Project Two" class="portfolio-img">
-                        <div class="portfolio-body">
-                            <h3>Project Two</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque labore ex aut
-                                reprehenderit quaerat doloremque.</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-card">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80"
-                            alt="Project Three" class="portfolio-img">
-                        <div class="portfolio-body">
-                            <h3>Project Three</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque labore ex aut
-                                reprehenderit quaerat doloremque.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="portfolio-card">
+              <img src="images/img8.png" alt="anh nay la suthy xinh gai" />
+              <div class="portfolio-body">
+                <h3>Project four</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium consectetur rerum deserunt qui iusto, quasi natus
+                  reprehenderit dolores sapiente dolorem. Inventore vitae vero
+                  id quam laudantium officiis ut perferendis amet?
+                </p>
+              </div>
             </div>
-        </section>
-        <section class="about-section" id="about">
-            <div class="container">
-                <div class="about-layout">
-                    <div class="about-content">
-                        <div class="section-title">
-                            <span class="sub-heading">WHY CHOOSE US</span>
-                            <h2>Modern Business Features</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, eum eaque hic maxime
-                                architecto repudiandae doloremque mollitia laboriosam cumque deserunt fuga at.</p>
-                        </div>
-
-                        <ul class="about-feature-list">
-                            <li>Responsive and modern design</li>
-                            <li>Easy to customize</li>
-                            <li>Fast Performance</li>
-                            <li>24/7 Support</li>
-                        </ul>
-
-                        <p class="about-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore
-                            laudantium temporibus, facere voluptatibus officiis corrupti excepturi sit harum dolores.
-                        </p>
-                    </div>
-
-                    <div class="about-visual">
-                        <div class="about-img-box">
-                            <img src="https://i.ytimg.com/vi/xc_h-qQ86Qg/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AG-B4AC0AWKAgwIABABGE4gVihlMA8=&rs=AOn4CLD9-UPleXrJJphYcSkf9MavPbQIjw"
-                                alt="Workspace">
-                        </div>
-                        <div class="about-btn-group">
-                            <button class="btn-primary">Get Started Now &rarr;</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="portfolio-card">
+              <img src="images/img9.png" alt="anh nay la suthy xinh gai" />
+              <div class="portfolio-body">
+                <h3>Project five</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium consectetur rerum deserunt qui iusto, quasi natus
+                  reprehenderit dolores sapiente dolorem. Inventore vitae vero
+                  id quam laudantium officiis ut perferendis amet?
+                </p>
+              </div>
             </div>
-        </section>
+            <div class="portfolio-card">
+              <img src="images/img10.png" alt="anh nay la suthy xinh gai" />
+              <div class="portfolio-body">
+                <h3>Project six</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Praesentium consectetur rerum deserunt qui iusto, quasi natus
+                  reprehenderit dolores sapiente dolorem. Inventore vitae vero
+                  id quam laudantium officiis ut perferendis amet?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-layout">
+            <div class="about-content">
+              <div class="section-title">
+                <span class="sub-heading">WHY CHOOSE US</span>
+                <h2>Modern Business Features</h2>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ratione, eum eaque hic maxime architecto repudiandae doloremque
+                mollitia laboriosam.
+              </p>
+              <ul class="feature-list">
+                <li>Responsive and modern design</li>
+                <li>Easy to customize</li>
+                <li>Fast Performance</li>
+                <li>24/7 Support</li>
+              </ul>
+              <p class="about-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                inventore laudantium temporibus, facere voluptatibus officiis
+                corrupti excepturi sit harum dolores.
+              </p>
+              <button class="btn-primary" type="button">
+                Get Started Now &rarr;
+              </button>
+            </div>
+            <div class="about-visual">
+              <img src="images/img5.jpg" alt="Workspace" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer" id="contact">
+    <footer class="footer">
+      <div class="container">
         <p>Copyright &copy; Govita 2026</p>
+      </div>
     </footer>
-
- 
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
